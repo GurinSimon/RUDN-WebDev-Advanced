@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Локальные настройки окружения: строка подключения к базе, пароли
+.env
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
