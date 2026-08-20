@@ -28,4 +28,8 @@ dist-ssr
 
 # AI Tools
 .claude
-.gigacode
+
+# Локальные файлы GigaCode не нужны в репозитории, а скиллы OpenSpec — нужны:
+# они лежат в .gigacode/skills/ и приезжают вместе с клоном
+.gigacode/*
+!.gigacode/skills/
