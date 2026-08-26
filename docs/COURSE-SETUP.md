@@ -41,7 +41,7 @@ openspec/   # спеки и задачи для работы с AI-агенто�
 | **Браузер с инструментами разработчика** | вкладка Network — обязательный инструмент отладки весь курс | Chrome, Firefox или Edge — любой | тема 1 |
 | **Аккаунт GitVerse + расширение GigaCode** | AI-агент, основной инструмент курса | [gitverse.ru](https://gitverse.ru/), установка — по шагам в начале [семинара темы 2](2-AI-Agents/SEMINAR-2.md) | тема 2 |
 | **PostgreSQL** (17 или новее) вместе с консольной программой `psql` | база данных проекта | [postgresql.org/download](https://www.postgresql.org/download/); macOS проще всего — [Postgres.app](https://postgresapp.com/) | тема 5 |
-| **Postman** | ручная проверка запросов к серверу; на нём же принимается домашнее задание | [postman.com/downloads](https://www.postman.com/downloads/) | тема 7 (пригодится и раньше, с темы 3) |
+| **Insomnia** | ручная проверка запросов к серверу; на нём же принимается домашнее задание | [insomnia.rest/download](https://insomnia.rest/download) | тема 7 (пригодится и раньше, с темы 3) |
 | **Docker Desktop** | упаковка приложения в контейнер — итоговое задание курса | [docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop/) | тема 8 |
 
 Проверить, что всё встало, можно одной серией команд в терминале — каждая должна напечатать номер версии, а не «команда не найдена»:
