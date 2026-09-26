@@ -23,6 +23,66 @@ const cards: Card[] = [{
   id: '4', 
   title: 'Четвертая карточка', 
   isDone: true
+},
+{
+  id: '3', 
+  title: 'Третья карточка', 
+  isDone: false
+},
+{
+  id: '4', 
+  title: 'Четвертая карточка', 
+  isDone: true
+},
+{
+  id: '3', 
+  title: 'Третья карточка', 
+  isDone: false
+},
+{
+  id: '4', 
+  title: 'Четвертая карточка', 
+  isDone: true
+},
+{
+  id: '3', 
+  title: 'Третья карточка', 
+  isDone: false
+},
+{
+  id: '4', 
+  title: 'Четвертая карточка', 
+  isDone: true
+},
+{
+  id: '3', 
+  title: 'Третья карточка', 
+  isDone: false
+},
+{
+  id: '4', 
+  title: 'Четвертая карточка', 
+  isDone: true
+},
+{
+  id: '3', 
+  title: 'Третья карточка', 
+  isDone: false
+},
+{
+  id: '4', 
+  title: 'Четвертая карточка', 
+  isDone: true
+},
+{
+  id: '3', 
+  title: 'Третья карточка', 
+  isDone: false
+},
+{
+  id: '4', 
+  title: 'Четвертая карточка', 
+  isDone: true
 }];
 
 function App() {

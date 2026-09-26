@@ -9,7 +9,10 @@ type Props = {
 export function BoardColumn(props: Props) {
   return (
     <section className={styles.column}>
-      <h2 className={styles.title}>К выполнению</h2>
+      <h2 className={styles.title}>
+        К выполнению
+        <span className={styles.counter}>{props.cards.length}</span>
+      </h2>
       <div className={styles.cards}>
         {props.cards.map(card => 
         <BoardCard 
