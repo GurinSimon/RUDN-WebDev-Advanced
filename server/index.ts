@@ -1,48 +1,35 @@
-import express from "express";
-import cors from 'cors';
-
+import express from 'express';
+import { createCard, deleteCard, getAllCards } from './services/cards.service.ts';
 const app = express();
 
-app.use(express.json());
-app.use(cors());
-
-const cards = [
-    {
-        "id": "1",
-        "title": "sdflmgdhsfjklhСпроектировать структуру доски",
-        "isDone": true,
-        "isUrgent": false
-    },
-    {
-        "id": "2",
-        "title": "Подключить доску к серверу",
-        "isDone": false,
-        "isUrgent": true
-    },
-    {
-        "id": "3",
-        "title": "Добавить фильтр выполненных карточек",
-        "isDone": false,
-        "isUrgent": false
-    }
-];
-
-app.get("/cards", (req, res) => {
-    res.json(cards);
+app.get('/cards', (req,res) => {
+    const ourCards = getAllCards();
+    
+    res.json(ourCards);
 });
 
-app.post("/cards", (req, res) => {
+app.post('/cards', (req, res) => {
     const title = req.body.title;
+    const newCard = createCard(title);
 
-    const id = Math.ceil(Math.random() * 100);
-
-    cards.push({id: String(id), 
-        title: title, 
-        isDone: false, 
-        isUrgent: false
-    });
+    res.status(201).json(newCard);
 });
 
-app.listen(3001, () => {
-    console.log('Сервер запущен');
-});
+app.delete('/cards', (req, res) => {
+    const id = req.query.id?.toString();
+
+    if (!id) {
+        res.sendStatus(400);
+        return;
+    }
+
+    const isDeleted = deleteCard(id);
+
+    if (!isDeleted) {
+        res.sendStatus(404);
+    } else {
+        res.sendStatus(204);
+    }
+})
+
+app.listen(3001);
